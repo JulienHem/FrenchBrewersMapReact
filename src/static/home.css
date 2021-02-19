@@ -1,13 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+
+h1 {
+    color: #000;
+}
+
+.beer_wrapper_block {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: left;
+    margin: 150px 120px;
+}
+
 .beer_img {
     background-image: url("../assets/static/beerbanner.png");
+}
+
+.text__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub__text {
+    color: #979797;
+    font-size: 20px;
+    max-width: 570px;
+    white-space: normal;
+    line-height: 30px;
 }
 
 .beer-wrapper {
     width: 100%;
     border-style: none;
 }
+
 
 .beer-wrapper--landing {
     margin-bottom: 0;
@@ -40,43 +69,8 @@
     text-align: left;
 }
 
-.beer_wrapper_block {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 50px;
-}
-
-#content_text1 {
-    font-size: 42px;
-    color: white;
-    margin-bottom: 0;
-}
-
-#content_text2 {
-    font-size: 42px;
-    color: white;
-    margin-bottom: 0;
-
-}
-
-#content_text3 {
-    font-size: 42px;
-    color: white;
-    margin-bottom: 0;
-
-}
-
-#content_text4 {
-    font-size: 42px;
-    color: white;
-    margin-bottom: 0;
-}
-
 .card__section {
-    box-shadow: inset 0 0 12px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 7px 5px 30px rgba(72, 73, 121, 0.15);
 }
 
 .title__cards__section {
@@ -93,6 +87,7 @@
 .card__section p {
     margin-top: 0;
     text-align: center;
+    color: black;
 }
 
 .cards__wrapper {
@@ -104,8 +99,18 @@
 }
 
 .card_one {
+    display: flex;
+    justify-content: center;
     max-width: 350px;
-    margin-right: 100px;
+}
+
+
+img{
+    margin-right: 50px;
+}
+
+img:last-child{
+    margin-right: 0;
 }
 
 .map__title {
@@ -115,6 +120,10 @@
     letter-spacing: 5px;
     font-family: 'Playfair Display', serif;
     color: #000;
+}
+
+.beer__map {
+    background-image: url("../assets/static/francemap.png");
 }
 
 .france__map {

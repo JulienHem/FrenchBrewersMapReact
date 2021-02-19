@@ -44,6 +44,7 @@
 .footer__subtext {
     margin: 0;
     color: white;
+    padding-bottom: 10px;
 }
 
 .footer__wrapper--2 {
@@ -51,7 +52,7 @@
 
 }
 
-h1 {
+.footer__title {
     color: white;
     margin: 0;
     padding: 0;

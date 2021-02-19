@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './home.css';
 import axios from "axios";
+import francemap from '../assets/static/francemap.png'
 
 interface Breweryimg {
     imgArray: string[]
@@ -21,26 +22,21 @@ export const Home: React.FC = () => {
                     console.log(err)
                 })
         });
-    }, [] )
+    }, [])
 
 
     return (
         <div>
             <div>
-                <div
-                    className="beer_img beer-wrapper beer-wrapper--landing beer-wrapper__headline beer__wrapper__headline--landing">
-                    <div className="beer_wrapper_content beer__wrapper_content--landing">
-                        <div className="beer_wrapper_block">
-                            <h2 id="content_text1" className="landing__content">La Brewing Map c'est un recensement
-                                des</h2>
-                            <h2 id="content_text2" className="landing__content">brasseurs, petits et grands de
-                                France.</h2>
-                            <h2 id="content_text3" className="landing__content">Vous n'êtes pas sur la map ?</h2>
-                            <h2 id="content_text4" className="landing__content">Contactez-nous !</h2>
-                        </div>
+                <div className="beer_wrapper_block">
+                    <div className="text__content">
+                        <h1>La Brewing Map, c'est quoi ?</h1>
+                        <div className="sub__text">La brewing map est une carte interactive permettant de trouver
+                            les brasseries dans votre région. Nous sommes un site communautaire alors si
+                            vous n'êtes pas sur la map, envoyez votre demande !</div>
                     </div>
+                    <img src={francemap} alt=""/>
                 </div>
-
 
                 <div className="card__section">
                     <h1 className="title__cards__section">Les brasseries du mois</h1>
@@ -49,7 +45,6 @@ export const Home: React.FC = () => {
                     <div className="cards__wrapper">
                         <div className="card_one">
                             {
-
                                 breweryImg.map((r, index) => {
                                     // @ts-ignore
                                     return <img src={r} key={index} alt="img"/>
