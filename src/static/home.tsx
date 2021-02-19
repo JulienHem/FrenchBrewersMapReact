@@ -33,7 +33,8 @@ export const Home: React.FC = () => {
                         <h1>La Brewing Map, c'est quoi ?</h1>
                         <div className="sub__text">La brewing map est une carte interactive permettant de trouver
                             les brasseries dans votre région. Nous sommes un site communautaire alors si
-                            vous n'êtes pas sur la map, envoyez votre demande !</div>
+                            vous n'êtes pas sur la map, envoyez votre demande !
+                        </div>
                     </div>
                     <img src={francemap} alt=""/>
                 </div>
@@ -43,15 +44,24 @@ export const Home: React.FC = () => {
                     <p>Sélectionnées par notre équipe</p>
 
                     <div className="cards__wrapper">
-                        <div className="card_one">
+                        <div className="card__one">
                             {
-                                breweryImg.map((r, index) => {
+                                breweryImg.slice(0, 2).map((r, index) => {
+                                    // @ts-ignore
+                                    return <img src={r} key={index} alt="img"/>
+                                })
+                            }
+                        </div>
+                        <div className="card__two">
+                            {
+                                breweryImg.slice(2, 4).map((r, index) => {
                                     // @ts-ignore
                                     return <img src={r} key={index} alt="img"/>
                                 })
                             }
                         </div>
                     </div>
+
 
 
                 </div>

@@ -93,25 +93,28 @@ h1 {
 .cards__wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 150px;
 }
 
-.card_one {
+.card__one {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    margin-right: 10px;
+}
+
+.card__two {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     max-width: 350px;
 }
 
 
-img{
-    margin-right: 50px;
-}
 
-img:last-child{
-    margin-right: 0;
-}
 
 .map__title {
     text-align: center;
